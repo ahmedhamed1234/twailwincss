@@ -1,0 +1,247 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+.hero_headring {
+    left: 40%;
+}
+
+
+
+.sliderOnedot {
+   
+    position: absolute;
+    top: 50%;
+    right:-30px;
+   }
+  
+  .sliderOnedot li {
+    list-style: none;
+    cursor: pointer;
+    /* display: inline-block; */
+    margin: 0 3px;
+    padding: 0;
+ 
+
+  }
+  .sliderOnedot  button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background: #FE7865;
+    border-radius: 50%;
+ 
+    outline: none;
+
+  }
+  .sliderOnedot li button {
+    width: 12px;
+    height: 12px;
+    background: #000;
+  }
+  
+  .sliderOnedot li.slick-active button {
+    background-color: orange;
+  }
+  
+  /* .sliderOnedot li button:hover,
+  .sliderOnedot li button:focus {
+    background: rgba(247, 34, 34, 0.8);
+    outline: 0;
+  } */
+
+
+
+ 
+
+body {
+    /* height: 8000px; */
+    /* background-color: olivedrab; */
+}
+
+.upto {
+    position: relative;
+}
+
+.upto::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    height: 4px;
+    width: 80%;
+    background: #f32a0f;
+}
+
+.sub_mune {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.sub_muneopen {
+    overflow: visible;
+}
+
+.box-1 {
+    position: relative;
+    height: 28rem;
+}
+
+.box-1 img {
+    position: absolute;
+    top: -5rem;
+}
+
+.box-4 {
+    position: relative;
+    height: 22rem;
+    margin-top: 18rem;
+}
+
+.box-4 img {
+    position: absolute;
+    top: -14rem;
+    left: 15%;
+}
+
+.box-5 {
+    position: relative;
+    height: 16rem;
+    width: 100%;
+    margin-bottom: 12rem;
+}
+
+.box-4 img {
+    position: absolute;
+  bottom: -8rem;
+}
+
+.agree_checked +label{
+ display: block;
+ width: 24px;
+ height: 24px;
+ background: #ffffff;
+ position: relative;
+ cursor: pointer;
+ border-radius: 50%;
+
+}
+
+.agree_checked +label:before{
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background: green;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   }
+
+   .agree_checked:checked + label:before{
+
+   background: black;
+
+
+   }
+   .slick-slide.slick-center .inner_box{
+    padding:0 20px;
+}
+/* .sliders{
+    margin-left: -50px;
+    margin-right: -50px;
+} */
+.slick-slide.slick-center .inner_box > div{
+    padding:50px 0;
+} 
+
+.slick-slide:not(.slick-center){
+    margin-bottom: 50px;
+    margin-top: 50px;
+ }
+
+ .slick-slider  .inner_box .labal {
+    display:none ;
+}
+
+.slick-slide.slick-center .inner_box .labal {
+    display:block ;
+ }
+
+ .slick-slider  .inner_box .number{
+    display:none ;
+}
+.slick-slide.slick-center .inner_box .number{
+    display:block ;
+ }  
+
+
+
+
+
+
+
+
+
+.button__bar {
+    display: inline-block;
+    /* vertical-align: middle;
+    margin: auto;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    width: 70px;
+    text-align: center; */
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50% );
+    align-items: center;
+  }
+  
+  .button__bar li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0;
+ 
+
+  }
+  .button__bar  button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background: #FE7865;
+    border-radius: 50%;
+ 
+    outline: none;
+
+  }
+  .button__bar li button {
+    /* border: none;
+    background: #a53692;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px; */
+    width: 12px;
+    height: 12px;
+    background: #FE78fe65;
+ 
+
+  }
+  
+  .button__bar li.slick-active button {
+    background-color: rgb(8, 255, 140);
+  }
+  
+  .button__bar li button:hover,
+  .button__bar li button:focus {
+    background: rgba(247, 34, 34, 0.8);
+    outline: 0;
+  }
+  
